@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+
 export default function Card() {
     return (
         <div>
@@ -52,16 +53,33 @@ export default function Card() {
                                         Agency that build many amazing product to boost your
                                         business to next level
                                     </p>
-                                    <div>
+                                    <div className="ml-40 flex flex-row">
+                                        <button
+                                            type="button"
+                                            className="relative text-xl font-semibold bg-stone-50 w-3/5 h-12 rounded-se-full rounded-ee-full rounded-es-full rounded-ss-full shadow m-5 md:m-0"
+                                        >
+                                            Get early access
+                                        </button>
+
+                                        <button
+                                            type="button"
+                                            className="relative bg-stone-50 w-12 h-12 rounded-se-full rounded-ee-full rounded-es-full rounded-ss-full shadow m-5 text-5xl font-bold md:m-0"
+                                        >+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="flex flex-col justify-between items-center mt-10 md:flex-row">
                             <div className="w-full flex items-center justify-center">
-                                <div class="relative bg-fuchsia-200 w-96 h-60 rounded-lg shadow m-5 md:m-0">
-                                    <div className="justify-center p-5 text-left font-sans font-semibold text-4xl">
+                                <div class="relative bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-stone-50 from-10% to-fuchsia-300 to-75% w-96 h-72 rounded-3xl shadow m-5 md:m-0">
+                                    <div className="justify-center p-5 text-left font-sans font-bold text-4xl">
                                         Global partners
+                                        <button
+                                            type="button"
+                                            className="relative justify-center bg-stone-50 w-12 h-12 rounded-se-full rounded-ee-full rounded-es-full rounded-ss-full shadow m-5 md:mr-0"
+                                        ><p className="font-black text-center">+</p>
+                                        </button>
                                     </div>
                                     <div className="flex flex-row justify-between items-center">
                                         <div className="w-full flex items-center justify-center p-5">
@@ -82,14 +100,20 @@ export default function Card() {
                                 </div>
                             </div>
                             <div className="w-full flex items-center justify-around">
-                                <div className="relative bg-sky-200 w-72 h-48 rounded-lg shadow m-5 md:ml-5 mt-0">
-                                    <div className="w-full h-full flex justify-center items-center text-5xl font-black">45M</div>
+                                <div className="relative bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-stone-50 from-10% to-sky-200 to-75% w-72 h-48 rounded-3xl shadow m-5 md:ml-5 mt-0">
+                                    <div className="w-full h-full justify-center items-center">
+                                        <p className="text-center text-5xl font-black mt-5">45M</p>
+                                        <p className="text-center text-2xl font-semibold">Budget: 55,000</p>
+                                        <p className="text-center text-l font-semibold mt-10">----Chart will be Shown Here----</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="w-full flex items-center justify-around">
-                                <div className="relative bg-red-200 w-72 h-48 rounded-lg shadow m-5 md:mt-0">
-                                    <div class="w-full h-full flex justify-center items-center text-center text-xl font-black">
-                                        <p>5000+<br/>Total Clients</p>
+                                <div className="relative bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-stone-50 from-10% to-red-200 to-75% w-72 h-48 rounded-3xl shadow m-5 md:mt-0">
+                                    <div class="w-full h-full justify-center items-center text-center mt-5">
+                                        <p className="text-4xl font-black">5000+</p>
+                                        <p className="text-xl font-semibold">Total Clients</p>
+                                        <div className="relative bg-stone-50 w-2/3 h-14 rounded-se-full rounded-ee-full rounded-es-full rounded-ss-full shadow m-5 p-2 text-sm font-semibold md:ml-12 ">----Clients Pictures linked to their Accounts----</div>
                                     </div>
                                 </div>
                             </div>
