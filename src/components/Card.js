@@ -8,7 +8,7 @@ export default function Card() {
                 <div className="h-full relative py-3 sm:max-w-full sm:mx-auto">
                     <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-5 bg-clip-padding bg-opacity-50 border border-gray-200">
                         <Navbar />
-                        <div className="flex flex-row justify-between items-center">
+                        <div className="flex flex-col justify-between items-center md:flex-row">
                             <div className="w-full flex items-center justify-center">
                                 <div className="max-w-md mx-auto">
                                     <h1 className="text-5xl text-zinc-200 font-sans font-black mt-10">The Digital Marketing Agency that makes A Difference</h1>
@@ -64,7 +64,11 @@ export default function Card() {
                                         <button
                                             type="button"
                                             className="relative bg-stone-50 w-12 h-12 rounded-se-full rounded-ee-full rounded-es-full rounded-ss-full shadow m-5 text-5xl font-bold md:m-0"
-                                        >+
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-6 item-center">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                                            </svg>
+
                                         </button>
                                     </div>
                                 </div>
@@ -72,7 +76,7 @@ export default function Card() {
                         </div>
                         <div className="flex flex-col justify-between items-center mt-10 md:flex-row">
                             <div className="w-full flex items-center justify-center">
-                                <div class="relative bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-stone-50 from-10% to-fuchsia-300 to-75% w-96 h-72 rounded-3xl shadow m-5 md:m-0">
+                                <div class="relative bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-stone-50 from-10% to-fuchsia-300 to-75% w-fit h-fit rounded-3xl shadow m-5 md:m-0">
                                     <div className="justify-center p-5 text-left font-sans font-bold text-4xl">
                                         Global partners
                                         <button
